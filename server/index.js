@@ -12,7 +12,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-    origin: [`${process.env.CLIENT_URL}`],
+    origin: [`https://chatting-92yj5cqfl-prashantscripters-projects.vercel.app`],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
