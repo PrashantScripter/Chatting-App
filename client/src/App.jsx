@@ -22,7 +22,7 @@ const App = () => {
     let socket;
 
     if (loggedInUser) {
-      socket = io('http://localhost:8000', {
+      socket = io(`${import.meta.env.VITE_API_URL}`, {
         query: {
           id: loggedInUser?._id,
         }
