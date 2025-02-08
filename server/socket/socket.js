@@ -7,7 +7,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ['https://chatting-92yj5cqfl-prashantscripters-projects.vercel.app'],
+        origin: ['https://chatting-app-chi.vercel.app'],
         methods: ['GET', 'POST'],
         credentials: true
     },
